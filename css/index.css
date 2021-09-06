@@ -106,7 +106,7 @@ main {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(5, 260px);
+    grid-template-columns: repeat(4, 300px);
     justify-content: center;
     gap: 1rem;
     padding: 2rem;
@@ -120,7 +120,7 @@ main {
 
 .divfofoca img {
     width: 100%;
-    height: 160px;
+    height: auto;
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
 }

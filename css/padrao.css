@@ -1,6 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    border: none;
+}
+
 /* HEADER */
 
 header {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,16 +70,25 @@ header a li {
 
 
 
+/* MAIN */
+
+main {
+    padding: 90px 0 18px 0;
+    min-height: 90vh;
+}
+
+/* /MAIN */
+
+
+
 /* FOOTER */
 
 footer {
     position: absolute;
-    bottom: 0;
-    display: block;
     width: 100%;
-    text-align: center;
     background-color: #131921;
     padding: 2.4rem;
+    text-align: center;
 }
 
 footer p {
@@ -76,3 +96,14 @@ footer p {
 }
 
 /* /FOOTER */
+
+/* FIXED BUTTON */
+
+#fixedButton img{
+    position: fixed;
+    right: 3rem;
+    bottom: 7rem;
+    width: 4.5rem;
+}
+
+/* /FIXED BUTTON */
