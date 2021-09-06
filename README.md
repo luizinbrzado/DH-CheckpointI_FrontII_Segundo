@@ -1,8 +1,8 @@
 
 # Projeto do Checkpoint
 
-Entrega: Individual
-Tema em grupo: Código Base
+- Entrega: Individual
+- Tema em grupo: Código Base
  
 ---
  
@@ -23,13 +23,15 @@ Template que permite adição de cards funcionais.
 > - - Submit.
  
 2. #### Funcionalidade:
-O formulário deve permitir "colar" a url da imagem interna ou externa e adicionar ao card;
+- O formulário deve permitir "colar" a url da imagem interna ou externa e adicionar ao card;
 
 3. #### "A Equipe":
-Gerado em JS ao clicar o botão com o mesmo nome;
+- Gerado em JS ao clicar o botão com o mesmo nome;
 
 4. #### Contato - formulário Funcionalidade:
-O usuário clicará em um botão "Entrar em contato" e será gerado um formulário JS dinamicamente.
+- O usuário clicará em um botão "Entrar em contato" e será gerado um formulário JS dinamicamente.
+
+---
 
 - Tema: Livre
 - Entrega: Tema em grupo com entrega individual.
