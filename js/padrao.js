@@ -8,7 +8,7 @@ let header = `
 </ul>
 `;
 
-if(window.location.href == "http://127.0.0.1:5500/index.html") {
+if(window.location.href.includes('index')) {
     header = `
     <a href="./index.html"><img src="./img/fofoca.jpg" alt=""></a>
     <ul>
