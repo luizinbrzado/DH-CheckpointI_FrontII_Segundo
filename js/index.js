@@ -62,13 +62,13 @@ btnAddFormFofoca.addEventListener('click', () => {
     const imgURL = document.querySelector("#imgURL");
 
     title.value = '';
-    title.style.border = '2px solid #f3f3f3';
+    title.style.border = '2px solid #131921';
 
     desc.value = '';
-    desc.style.border = '2px solid #f3f3f3';
+    desc.style.border = '2px solid #131921';
 
     imgURL.value = '';
-    imgURL.style.border = '2px solid #f3f3f3';
+    imgURL.style.border = '2px solid #131921';
 })
 
 btnFecharFormFofoca.addEventListener('click', () => {
