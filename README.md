@@ -7,7 +7,7 @@
 ---
  
 ### Lista de requisitos mínimos do Projeto Problemática:
-> Template que permite adição de cards funcionais.
+Template que permite adição de cards funcionais.
 
 ---
 
