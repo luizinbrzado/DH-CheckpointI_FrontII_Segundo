@@ -7,11 +7,13 @@
     border: none;
 }
 
+body {
+    background-color: #eaeded;
+}
+
 main {
     display: flex;
     flex-direction: column;
-    background-color: #eaeded;
-    min-height: 80vh;
 }
 
 .formFofoca {

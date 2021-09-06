@@ -55,11 +55,11 @@ btnAddCard.addEventListener('click', (e) => {
 
 btnAddFormFofoca.addEventListener('click', () => {
     const formFofoca = document.querySelector('.formFofoca');
-    formFofoca.style.display = 'block';
-
     const title = document.querySelector("#title");
     const desc = document.querySelector("#description");
     const imgURL = document.querySelector("#imgURL");
+
+    formFofoca.style.display = 'block';
 
     title.value = '';
     title.style.border = '2px solid #131921';
