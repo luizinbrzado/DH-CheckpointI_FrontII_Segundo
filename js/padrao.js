@@ -2,10 +2,10 @@
 
 let header = `
 <a href="./index.html"><img src="./img/fofoca.jpg" alt=""></a>
-<ul>
-    <a id="index" href="./equipe.html"><li>Equipe</li></a>
-    <a href="./contato.html"><li>Contato</li></a>
-</ul>
+<div>
+    <a id="index" href="./equipe.html">Equipe</a>
+    <a href="./contato.html">Contato</a>
+</div>
 `;
 
 if(window.location.href.includes('index')) {
