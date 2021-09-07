@@ -1,7 +1,7 @@
 
 # Projeto do Checkpoint
 
-[Site](https://luizinbrzado.github.io/DH-CheckpointI_FrontII_Segundo/)
+[Site](https://luizinbrzado.github.io/DH-CheckpointI_FrontII_Segundo/){:target="_blank"}
 
 - Entrega: Individual
 - Tema em grupo: Código Base
