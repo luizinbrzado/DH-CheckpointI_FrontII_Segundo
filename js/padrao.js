@@ -12,7 +12,7 @@ let header = `
 </nav>
 `;
 
-if(window.location.href.includes('index')) {
+if(window.location.href.includes('index') || ( window.location.pathname.includes('checkpoint') && window.location.pathname.includes('index'))) {
     header = `
     <nav>
         <a href="./index.html"><img src="./img/fofoca.jpg" alt=""></a>
