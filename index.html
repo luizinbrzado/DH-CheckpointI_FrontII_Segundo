@@ -16,31 +16,36 @@
     <header>
     </header>
     <main>
-        <div class="formFofoca">
-            <button id="btnFechar"><i class="fas fa-times"></i></button>
-            <h2>Nova fofoca</h2>
-            <p>* Obrigatório preencher</p>
-            <div>
-                <label for="title">* Título:</label>
-                <input type="text" id="title" placeholder="Fulano comeu meu bolo...">
+        <div class="modal">
+            <div class="formFofoca">
+                <button id="btnFechar"><i class="fas fa-times"></i></button>
+                <h2>Nova fofoca</h2>
+                <p>* Obrigatório preencher</p>
+                <div>
+                    <label for="title">* Título:</label>
+                    <input type="text" id="title" placeholder="Fulano comeu meu bolo...">
+                </div>
+                <div>
+                    <label for="description">* Descrição:</label>
+                    <span id="counter">200</span>
+                    <textarea name="" id="description" cols="20" rows="6" maxlength="200" placeholder="Fulano pegou meu bolo da geladeira sem pedir e tava escrito meu nome num papelzinho em cima do pote"></textarea>
+                </div>
+                <div>
+                    <label for="imgURL">* Imagem (URL):</label>
+                    <input type="text" id="imgURL" placeholder="https://sitedaimagem.com/imagem-fulando-comendo-bolo.jpg">
+                </div>
+                <button id="addCard">Enviar</button>
             </div>
-            <div>
-                <label for="description">* Descrição:</label>
-                <textarea name="" id="description" cols="20" rows="6" placeholder="Fulano pegou meu bolo da geladeira sem pedir e tava escrito meu nome num papelzinho em cima do pote"></textarea>
-            </div>
-            <div>
-                <label for="imgURL">* Imagem (URL):</label>
-                <input type="text" id="imgURL" placeholder="https://sitedaimagem.com/imagem-fulando-comendo-bolo.jpg">
-            </div>
-            <button id="addCard">Enviar</button>
         </div>
+
+        <h4 id="arroz"></h4>
 
         <div class="cards">
             <div class="divfofoca">
                 <img src="http://127.0.0.1:5500/img/fofoca.jpg" alt="TITULO TITULO TITULO TITULO TITULO TITULO ">
                 <h2>Título de exemplo sobre Fulano</h2>
-                <p>Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição
-                    Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição </p>
+                <p>Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição</p>
+                <button class="excluirCard"><i class="fas fa-times"></i></button>
             </div>
         </div>
     </main>

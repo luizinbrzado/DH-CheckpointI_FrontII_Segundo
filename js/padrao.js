@@ -11,11 +11,11 @@ let header = `
 if(window.location.href.includes('index')) {
     header = `
     <a href="./index.html"><img src="./img/fofoca.jpg" alt=""></a>
-    <ul>
+    <div>
         <button id="addFofoca">Criar fofoca</button>
-        <a id="index" href="./equipe.html"><li>Equipe</li></a>
-        <a href="./contato.html"><li>Contato</li></a>
-    </ul>`
+        <a id="index" href="./equipe.html">Equipe</a>
+        <a href="./contato.html">Contato</a>
+    </div>`
 }
 
 document.body.querySelector('header').innerHTML = header;

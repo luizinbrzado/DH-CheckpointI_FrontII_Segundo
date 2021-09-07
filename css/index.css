@@ -16,6 +16,17 @@ main {
     flex-direction: column;
 }
 
+.modal {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
 .formFofoca {
     display: none;
     color: #000;
@@ -30,6 +41,7 @@ main {
     height: auto;
     padding: 20px;
     margin: 3rem auto 3rem auto;
+    z-index: 3;
 }
 
 #btnFechar {
@@ -66,18 +78,24 @@ main {
 
 .formFofoca label {
     margin-bottom: 0.2rem;
-    font-size: 20px;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 
 .formFofoca input,
 .formFofoca textarea {
     width: 100%;
-    border: 1px solid #000;
+    border: 2px solid #131921;
     border-radius: 0.5rem;
     padding: 0.5rem;
     transition: border .3s;
     resize: none;
+}
+
+#counter {
+    margin-left: auto;
+    margin-right: 0.3rem;
+    font-size: 1.2rem;
 }
 
 .formFofoca input:hover,
@@ -113,6 +131,7 @@ main {
 }
 
 .divfofoca {
+    position: relative;
     background-color: #232f3e;
     border-radius: 1rem;
     color: #fff;
@@ -128,7 +147,7 @@ main {
 .divfofoca h2 {
     text-transform: uppercase;
     font-size: 1rem;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
     margin: 1rem;
     border-bottom: 2px solid #ffa500;
 }
@@ -136,4 +155,16 @@ main {
 .divfofoca p {
     font-size: .9rem;
     margin: 1rem;
+}
+
+.divfofoca button {
+    position: absolute;
+    background-color: #ffa500;
+    font-size: 1rem;
+    padding: 0.1rem 0.3rem;
+    border-radius: 1rem;
+    left: 50%;
+    bottom: -0.5rem;
+    transform: translateX(-50%);
+    cursor: pointer;
 }

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="formFofoca">
+        <button id="btnFechar"><i class="fas fa-times"></i></button>
+        <h2>Nova fofoca</h2>
+        <p>* Obrigatório preencher</p>
+        <div>
+            <label for="title">* Título:</label>
+            <input type="text" id="title" placeholder="Fulano comeu meu bolo...">
+        </div>
+        <div>
+            <label for="description">* Descrição:</label>
+            <textarea name="" id="description" cols="20" rows="6"
+                placeholder="Fulano pegou meu bolo da geladeira sem pedir e tava escrito meu nome num papelzinho em cima do pote"></textarea>
+        </div>
+        <div>
+            <label for="imgURL">* Imagem (URL):</label>
+            <input type="text" id="imgURL" placeholder="https://sitedaimagem.com/imagem-fulando-comendo-bolo.jpg">
+        </div>
+        <button id="addCard">Enviar</button>
+    </div>
+
+    <div class="cards">
+
+    </div>
+    <script>
+        const cards = document.querySelector('.cards');
+        const btnAddCard = document.getElementById('addCard');
+        btnAddCard.addEventListener('click', (e) => {
+            e.preventDefault()
+            let div = document.createElement("div");
+            div.setAttribute("class", 'divfofoca');
+
+            const title = document.querySelector("#title");
+            const desc = document.querySelector("#description");
+            const imgURL = document.querySelector("#imgURL");
+
+            // VALIDAÇÃO DO TÍTULO
+            if (title.value == '') {
+                title.style.border = '2px solid #f00';
+            } else {
+                title.style.border = '2px solid #f3f3f3';
+            }
+
+            // VALIDAÇÃO DA DESCRIÇÃO
+            if (desc.value == '') {
+                desc.style.border = '2px solid #f00';
+            } else {
+                desc.style.border = '2px solid #f3f3f3';
+            }
+
+            // VALIDAÇÃO DA IMAGEM
+            if (imgURL.value == '') {
+                imgURL.style.border = '2px solid #f00';
+            } else {
+                imgURL.style.border = '2px solid #f3f3f3';
+            }
+
+            // COLOCA DADOS NO CARD
+            if (title.value !== '' && desc.value !== '' && imgURL.value !== '') {
+                //     div.innerHTML = `
+                // <img src="${imgURL.value}" alt="${title.value}">
+                // <h2>${title.value.toUpperCase()}</h2>
+                // <p>${desc.value}</p>
+                // <button id="excluirCard">Excluir</button>
+                // `
+
+                let img = document.createElement('img');
+                img.setAttribute('src', title.value)
+
+                let h2 = document.createElement('h2');
+                h2.textContent = title.value;
+
+                let p = document.createElement('p');
+                p.textContent = desc.value;
+
+                let button = document.createElement('button');
+                button.setAttribute('id', 'excluir')
+                button.textContent = 'Mamaco'
+
+                div.append(img, h2, p, button)
+
+                cards.appendChild(div);
+
+                title.value = "";
+                desc.value = "";
+                imgURL.value = "";
+
+                title.focus();
+            }
+        })
+
+        let rmvButton = document.querySelectorAll('#excluir');
+
+        for (let i = 0; i < cards.length; i++) {
+            rmvButton[i].addEventListener('click', () => {
+                cards[i].remove();
+            });
+        };
+
+        document.body.addEventListener('click', () => {
+            let rmvButton = document.querySelectorAll('#excluirCard');
+            let cardinho = document.querySelectorAll('.cards');
+            let count = 0;
+
+            for (let i = 0; i < cardinho.length; i++) {
+                const abc = document.querySelectorAll('#excluir')
+                console.log(abc);
+            }
+        })
+
+    </script>
+</body>
+
+</html>

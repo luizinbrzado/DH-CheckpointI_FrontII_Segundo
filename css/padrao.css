@@ -16,6 +16,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #131921;
+    z-index: 1;
 }
 
 header > * {
@@ -48,18 +49,18 @@ header button:hover {
     border: 1px solid #fff;
 }
 
-header ul > a {
+header a {
     text-decoration: none;
     border: 1px solid transparent;
     border-radius: 0.5rem;
     transition: border;
 }
 
-header ul > a:focus, header ul > a:hover {
+header a:focus, header a:hover {
     border: 1px solid #fff;
 }
 
-header a li {
+header a {
     font-size: 1.2rem;
     font-weight: 400;
     color: #fff;
@@ -98,12 +99,17 @@ footer p {
 /* /FOOTER */
 
 /* FIXED BUTTON */
-
-#fixedButton img{
+#fixedButton {
+    background-color: #131921;
     position: fixed;
     right: 3rem;
     bottom: 7rem;
+    border-radius: 0.6rem;
+    border: 2px solid #fff;
+}
+#fixedButton img{
     width: 4.5rem;
+    filter: invert(1);
 }
 
 /* /FIXED BUTTON */
