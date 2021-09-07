@@ -1,19 +1,19 @@
 /* HEADER */
 
 let header = `
-<a href="./fofocas.html"><img src="./img/fofoca.jpg" alt=""></a>
+<a href="./index.html"><img src="./img/fofoca.jpg" alt=""></a>
 <div>
-    <a id="fofocas" href="./equipe.html">Equipe</a>
-    <a href="./contato.html">Contato</a>
+    <li><a id="index" href="./equipe.html">Equipe</a></li>
+    <li><a href="./contato.html">Contato</a></li>
 </div>
 `;
 
-if(window.location.href.includes('fofocas')) {
+if(window.location.href.includes('index')) {
     header = `
-    <a href="./fofocas.html"><img src="./img/fofoca.jpg" alt=""></a>
+    <a href="./index.html"><img src="./img/fofoca.jpg" alt=""></a>
     <div>
         <button id="addFofoca">Criar fofoca</button>
-        <a id="fofocas" href="./equipe.html">Equipe</a>
+        <a id="index" href="./equipe.html">Equipe</a>
         <a href="./contato.html">Contato</a>
     </div>`
 }
