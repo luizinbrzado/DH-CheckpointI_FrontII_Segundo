@@ -1,3 +1,7 @@
+window.onload = () => {
+    window.location.href.replace('index.html')
+}
+
 const modal = document.querySelector('.modal');
 const formFofoca = document.querySelector('.formFofoca');
 const btnAddCard = document.getElementById('addCard');
