@@ -31,21 +31,21 @@ btnAddCard.addEventListener('click', (e) => {
     if (title.value == '') {
         title.style.border = '2px solid #f00';
     } else {
-        title.style.border = '2px solid #131921';
+        title.style.border = '';
     }
 
     // VALIDAÇÃO DA DESCRIÇÃO
     if (desc.value == '') {
         desc.style.border = '2px solid #f00';
     } else {
-        desc.style.border = '2px solid #131921';
+        desc.style.border = '';
     }
 
     // VALIDAÇÃO DA IMAGEM
     if (imgURL.value == '') {
         imgURL.style.border = '2px solid #f00';
     } else {
-        imgURL.style.border = '2px solid #131921';
+        imgURL.style.border = '';
     }
 
     // COLOCA DADOS NO CARD
