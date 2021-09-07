@@ -79,16 +79,32 @@ main {
 
 /* /MAIN */
 
+/* FIXED BUTTON */
+section {
+    position: absolute;
+    width: 100%;
+    height: 1rem;
+}
 
+#fixedButton img{
+    position: absolute;
+    right: 3rem;
+    bottom: 1rem;
+    width: 4.5rem;
+}
+
+/* /FIXED BUTTON */
 
 /* FOOTER */
 
 footer {
-    position: absolute;
+    position:relative;
     width: 100%;
     background-color: #131921;
     padding: 2.4rem;
     text-align: center;
+    bottom: 0;
+    
 }
 
 footer p {
@@ -97,13 +113,4 @@ footer p {
 
 /* /FOOTER */
 
-/* FIXED BUTTON */
 
-#fixedButton img{
-    position: fixed;
-    right: 3rem;
-    bottom: 7rem;
-    width: 4.5rem;
-}
-
-/* /FIXED BUTTON */

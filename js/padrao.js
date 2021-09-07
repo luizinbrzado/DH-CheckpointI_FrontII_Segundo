@@ -38,9 +38,9 @@ document.body.querySelector('footer').innerHTML = footer;
 
 let fixedButton = `
     <a id="fixedButton" href="https://www.facebook.com/Fofoqueiros-An%C3%B4nimos-578004255573249/" target="_blank" rel="noreferrer noopener".>
-        <img src="./img/saf.png" alt="Serviço de Atendimento ao Fofoqueiro">
+        <img src="./img/saf.png" alt="Serviço de Atendimento ao Fofoqueiro" title="SAF - Serviço de Atendimento ao Fofoqueiro">
     </a>
 `
-document.body.querySelector('main').innerHTML += fixedButton;
+document.body.querySelector('section').innerHTML += fixedButton;
 
 /* /FIXED BUTTON */

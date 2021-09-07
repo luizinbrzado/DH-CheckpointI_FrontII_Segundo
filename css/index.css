@@ -19,10 +19,10 @@ main {
 .formFofoca {
     display: none;
     color: #000;
-    position: absolute;
+    position: fixed;
     left: 50%;
-    top: 35%;
-    transform: translate(-50%, -35%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-color: #f3f3f3;
     border: 2px solid #131921;
     border-radius: 0.5rem;
@@ -137,3 +137,4 @@ main {
     font-size: .9rem;
     margin: 1rem;
 }
+

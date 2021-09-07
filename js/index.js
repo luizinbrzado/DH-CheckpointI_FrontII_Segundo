@@ -45,9 +45,9 @@ btnAddCard.addEventListener('click', (e) => {
 
         cards.appendChild(div);
 
-        title.value = "";
+       /*  title.value = "";
         desc.value = "";
-        imgURL.value = "";
+        imgURL.value = ""; */
 
         title.focus();
     }
