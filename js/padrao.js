@@ -8,7 +8,7 @@ let header = `
 </div>
 `;
 
-if(window.location.href.includes('index')) {
+if(window.location.href.includes('index') || window.location.href.includes('Checkpoint')) {
     header = `
     <a href="./index.html"><img src="./img/fofoca.jpg" alt=""></a>
     <div>
