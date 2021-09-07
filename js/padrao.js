@@ -3,8 +3,8 @@
 let header = `
 <a href="./index.html"><img src="./img/fofoca.jpg" alt=""></a>
 <div>
-    <li><a id="index" href="./equipe.html">Equipe</a></li>
-    <li><a href="./contato.html">Contato</a></li>
+    <a id="index" href="./equipe.html">Equipe</a>
+    <a href="./contato.html">Contato</a>
 </div>
 `;
 
