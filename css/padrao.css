@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    border: none;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131921;
+    z-index: 1;
+}
+
+header > * {
+    margin: 1rem;
+}
+
+header img {
+    width: 60px;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+header ul {
+    display: flex;
+    gap: 1rem;
+}
+
+header button {
+    font-weight: 600;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    background-color: #ffa500;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    transition: border .3s;
+}
+
+header button:hover {
+    border: 1px solid #fff;
+}
+
+header a {
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    transition: border;
+}
+
+header a:focus, header a:hover {
+    border: 1px solid #fff;
+}
+
+header a {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+    padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+}
+
+/* /HEADER */
+
+
+
+/* MAIN */
+
+main {
+    padding: 90px 0 18px 0;
+    min-height: 90vh;
+}
+
+/* /MAIN */
+
+
+
+/* FOOTER */
+
+footer {
+    position: absolute;
+    width: 100%;
+    background-color: #131921;
+    padding: 2.4rem;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+}
+
+/* /FOOTER */
+
+/* FIXED BUTTON */
+#fixedButton {
+    background-color: #131921;
+    position: fixed;
+    right: 3rem;
+    bottom: 7rem;
+    border-radius: 0.6rem;
+    border: 2px solid #fff;
+}
+#fixedButton img{
+    width: 4.5rem;
+    filter: invert(1);
+}
+
+/* /FIXED BUTTON */
