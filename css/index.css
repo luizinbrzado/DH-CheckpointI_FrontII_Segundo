@@ -92,7 +92,7 @@ main {
     resize: none;
 }
 
-#counter {
+.counter {
     margin-left: auto;
     margin-right: 0.3rem;
     font-size: 1.2rem;

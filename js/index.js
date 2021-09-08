@@ -3,7 +3,10 @@ const formFofoca = document.querySelector('.formFofoca');
 const btnAddCard = document.getElementById('addCard');
 const btnAddFormFofoca = document.getElementById('addFofoca');
 const btnFecharFormFofoca = document.getElementById('btnFechar')
+const title = document.querySelector("#title");
 const desc = document.querySelector("#description");
+
+
 
 function reloadConsts() {
     const divFofoca = document.querySelectorAll('.divfofoca');
@@ -17,14 +20,30 @@ function reloadConsts() {
 };
 
 desc.addEventListener("input", function (e) {
-    let counter = document.getElementById("counter");
-    let inputLenght = desc.value.length
+    let counterDesc = document.getElementById("counterDesc");
+    let inputDescLenght = desc.value.length;
 
-    counter.innerText = `${200 - inputLenght}`;
-    if (inputLenght >= 180) {
-        counter.style.color = '#f00';
+    let maxDescLenght = desc.getAttribute('maxlength');
+
+    counterDesc.innerText = `${maxDescLenght - inputDescLenght}`;
+    if (inputDescLenght >= maxDescLenght-30) {
+        counterDesc.style.color = '#f00';
     } else {
-        counter.style.color = '';
+        counterDesc.style.color = '';
+    };
+});
+
+title.addEventListener("input", function (e) {
+    let counterTitle = document.getElementById("counterTitle");
+    let inputTitleLenght = title.value.length;
+
+    let maxTitleLenght = title.getAttribute('maxlength');
+
+    counterTitle.innerText = `${maxTitleLenght - inputTitleLenght}`;
+    if (inputTitleLenght >= maxTitleLenght-20) {
+        counterTitle.style.color = '#f00';
+    } else {
+        counterTitle.style.color = '';
     };
 });
 
@@ -94,7 +113,7 @@ btnAddFormFofoca.addEventListener('click', () => {
     title.value = '';
     desc.value = '';
     imgURL.value = '';
-    
+
 })
 
 btnFecharFormFofoca.addEventListener('click', () => {
