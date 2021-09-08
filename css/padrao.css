@@ -12,54 +12,64 @@
 header {
     position: fixed;
     width: 100%;
+    z-index: 1;
+    background-color: #131921;
+    padding: 1rem;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #131921;
 }
 
-header > * {
-    margin: 1rem;
-}
-
-header img {
+nav img {
     width: 60px;
     height: auto;
     border-radius: 0.5rem;
 }
 
-header ul {
+nav div {
     display: flex;
-    gap: 1rem;
 }
 
-header button {
+nav button {
     font-weight: 600;
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     background-color: #ffa500;
     outline: none;
     cursor: pointer;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     border-radius: 0.5rem;
     transition: border .3s;
 }
 
-header button:hover {
-    border: 1px solid #fff;
+nav button:hover {
+    border: 2px solid #fff;
 }
 
-header ul > a {
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav li a {
     text-decoration: none;
     border: 1px solid transparent;
     border-radius: 0.5rem;
     transition: border;
 }
 
-header ul > a:focus, header ul > a:hover {
+nav li a:focus,
+nav li a:hover {
     border: 1px solid #fff;
 }
 
-header a li {
+nav li a {
     font-size: 1.2rem;
     font-weight: 400;
     color: #fff;
@@ -98,13 +108,12 @@ section {
 /* FOOTER */
 
 footer {
-    position:relative;
+    position: relative;
     width: 100%;
     background-color: #131921;
     padding: 2.4rem;
     text-align: center;
     bottom: 0;
-    
 }
 
 footer p {
@@ -112,5 +121,3 @@ footer p {
 }
 
 /* /FOOTER */
-
-

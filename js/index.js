@@ -1,8 +1,32 @@
+const modal = document.querySelector('.modal');
 const formFofoca = document.querySelector('.formFofoca');
 const btnAddCard = document.getElementById('addCard');
 const btnAddFormFofoca = document.getElementById('addFofoca');
 const btnFecharFormFofoca = document.getElementById('btnFechar')
-const cards = document.querySelector('.cards');
+const desc = document.querySelector("#description");
+
+function reloadConsts() {
+    const divFofoca = document.querySelectorAll('.divfofoca');
+    const rmvbtn = document.querySelectorAll('.excluirCard');
+
+    for (let i = 0; i < rmvbtn.length; i++) {
+        rmvbtn[i].addEventListener('click', () => {
+            divFofoca[i].remove();
+        })
+    };
+};
+
+desc.addEventListener("input", function (e) {
+    let counter = document.getElementById("counter");
+    let inputLenght = desc.value.length
+
+    counter.innerText = `${200 - inputLenght}`;
+    if (inputLenght >= 180) {
+        counter.style.color = '#f00';
+    } else {
+        counter.style.color = '';
+    };
+});
 
 btnAddCard.addEventListener('click', (e) => {
     e.preventDefault()
@@ -13,26 +37,27 @@ btnAddCard.addEventListener('click', (e) => {
     const desc = document.querySelector("#description");
     const imgURL = document.querySelector("#imgURL");
     const cards = document.querySelector('.cards');
+    const counter = document.querySelector('#counter');
 
     // VALIDAÇÃO DO TÍTULO
     if (title.value == '') {
         title.style.border = '2px solid #f00';
     } else {
-        title.style.border = '2px solid #f3f3f3';
+        title.style.border = '';
     }
 
     // VALIDAÇÃO DA DESCRIÇÃO
     if (desc.value == '') {
         desc.style.border = '2px solid #f00';
     } else {
-        desc.style.border = '2px solid #f3f3f3';
+        desc.style.border = '';
     }
 
     // VALIDAÇÃO DA IMAGEM
     if (imgURL.value == '') {
         imgURL.style.border = '2px solid #f00';
     } else {
-        imgURL.style.border = '2px solid #f3f3f3';
+        imgURL.style.border = '';
     }
 
     // COLOCA DADOS NO CARD
@@ -41,36 +66,42 @@ btnAddCard.addEventListener('click', (e) => {
             <img src="${imgURL.value}" alt="${title.value}">
             <h2>${title.value.toUpperCase()}</h2>
             <p>${desc.value}</p>
+            <button class="excluirCard"><i class="fas fa-times"></i></button>
             `
 
         cards.appendChild(div);
 
-       /*  title.value = "";
+        counter.textContent = '200';
+
+        title.value = "";
         desc.value = "";
-        imgURL.value = ""; */
+        imgURL.value = "";
 
         title.focus();
+
+        reloadConsts();
     }
 })
 
 btnAddFormFofoca.addEventListener('click', () => {
-    const formFofoca = document.querySelector('.formFofoca');
     const title = document.querySelector("#title");
     const desc = document.querySelector("#description");
     const imgURL = document.querySelector("#imgURL");
 
+    modal.style.display = 'block';
     formFofoca.style.display = 'block';
 
     title.value = '';
-    title.style.border = '2px solid #131921';
-
     desc.value = '';
-    desc.style.border = '2px solid #131921';
-
     imgURL.value = '';
-    imgURL.style.border = '2px solid #131921';
+    
 })
 
 btnFecharFormFofoca.addEventListener('click', () => {
     formFofoca.style.display = 'none';
+    modal.style.display = 'none';
 })
+
+window.onload = () => {
+    reloadConsts()
+}

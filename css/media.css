@@ -1,4 +1,22 @@
 /* Responsividade para telas com largura máxima de 1024px*/
+@media (max-width: 1440px) {
+    
+    main .cards {
+        grid-template-columns: repeat(3, 300px);
+    }
+    
+    .formFofoca {
+        width: 400px;
+        height: auto;
+    }
+
+    .contato {
+        width: 400px;
+        height: auto;
+    }
+}
+
+/* Responsividade para telas com largura máxima de 1024px*/
 @media (max-width: 1024px) {
     
     main .cards {
@@ -14,7 +32,6 @@
         width: 400px;
         height: auto;
     }
-    
 }
 
 /* Responsividade para telas com largura máxima de 768px */
@@ -49,7 +66,6 @@
         width: 200px;
         height: auto;
     }
-    
 }
 
 .imagem {
@@ -72,9 +88,7 @@
         top: 50%;
         width: 100%;
         justify-content: space-between;
-    } 
-
-    
+    }
 }   
 /*
 @media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android)  }

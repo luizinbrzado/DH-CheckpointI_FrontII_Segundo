@@ -26,4 +26,3 @@ function criarFormContato() {
     </div>
     `;
 }
-

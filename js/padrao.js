@@ -1,21 +1,29 @@
 /* HEADER */
 
 let header = `
-<a href="./index.html"><img src="./img/fofoca.jpg" alt=""></a>
-<ul>
-    <a id="index" href="./equipe.html"><li>Equipe</li></a>
-    <a href="./contato.html"><li>Contato</li></a>
-</ul>
+<nav>
+    <a href="./index.html"><img src="./img/fofoca.jpg" alt=""></a>
+    <div>
+        <ul>
+            <li><a id="index" href="./equipe.html">Equipe</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+        </ul>
+    </div>
+</nav>
 `;
 
-if(window.location.href.includes('index')) {
+if(document.title.includes('Fofocas')) {
     header = `
-    <a href="./index.html"><img src="./img/fofoca.jpg" alt=""></a>
-    <ul>
-        <button id="addFofoca">Criar fofoca</button>
-        <a id="index" href="./equipe.html"><li>Equipe</li></a>
-        <a href="./contato.html"><li>Contato</li></a>
-    </ul>`
+    <nav>
+        <a href="./index.html"><img src="./img/fofoca.jpg" alt=""></a>
+        <div>
+            <button id="addFofoca">Criar fofoca</button>
+            <ul>
+                <li><a id="index" href="./equipe.html">Equipe</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>`
 }
 
 document.body.querySelector('header').innerHTML = header;
