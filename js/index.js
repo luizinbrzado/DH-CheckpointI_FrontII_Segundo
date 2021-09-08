@@ -6,8 +6,6 @@ const btnFecharFormFofoca = document.getElementById('btnFechar')
 const title = document.querySelector("#title");
 const desc = document.querySelector("#description");
 
-
-
 function reloadConsts() {
     const divFofoca = document.querySelectorAll('.divfofoca');
     const rmvbtn = document.querySelectorAll('.excluirCard');
@@ -20,10 +18,10 @@ function reloadConsts() {
 };
 
 desc.addEventListener("input", function (e) {
-    let counterDesc = document.getElementById("counterDesc");
-    let inputDescLenght = desc.value.length;
+    const counterDesc = document.getElementById("counterDesc");
+    const inputDescLenght = desc.value.length;
 
-    let maxDescLenght = desc.getAttribute('maxlength');
+    const maxDescLenght = desc.getAttribute('maxlength');
 
     counterDesc.innerText = `${maxDescLenght - inputDescLenght}`;
     if (inputDescLenght >= maxDescLenght-30) {
@@ -34,10 +32,10 @@ desc.addEventListener("input", function (e) {
 });
 
 title.addEventListener("input", function (e) {
-    let counterTitle = document.getElementById("counterTitle");
-    let inputTitleLenght = title.value.length;
+    const counterTitle = document.getElementById("counterTitle");
+    const inputTitleLenght = title.value.length;
 
-    let maxTitleLenght = title.getAttribute('maxlength');
+    const maxTitleLenght = title.getAttribute('maxlength');
 
     counterTitle.innerText = `${maxTitleLenght - inputTitleLenght}`;
     if (inputTitleLenght >= maxTitleLenght-20) {
@@ -56,7 +54,6 @@ btnAddCard.addEventListener('click', (e) => {
     const desc = document.querySelector("#description");
     const imgURL = document.querySelector("#imgURL");
     const cards = document.querySelector('.cards');
-    const counter = document.querySelector('#counter');
 
     // VALIDAÇÃO DO TÍTULO
     if (title.value == '') {
@@ -90,11 +87,12 @@ btnAddCard.addEventListener('click', (e) => {
 
         cards.appendChild(div);
 
-        counter.textContent = '200';
+        counterTitle.textContent = title.getAttribute('maxlength');
+        counterDesc.textContent = desc.getAttribute('maxlength');
 
-        title.value = "";
-        desc.value = "";
-        imgURL.value = "";
+        // title.value = '';
+        // desc.value = '';
+        // imgURL.value = '';
 
         title.focus();
 
