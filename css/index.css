@@ -1,179 +1,170 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    outline: none;
-    border: none;
+    margin: 0; /* Muda a margem */
+    padding: 0; /* "Infla" o elemento */
+    box-sizing: border-box; /* Muda a propriedade do tamanho da caixa e não inclui a margem */
+    list-style: none; /* Muda estilo de lista */
+    outline: none; /* Muda a linha de fora */ 
+    border: none; /* Muda a borda */
 }
 
 body {
-    background-color: #eaeded;
+    background-color: #eaeded; /* Troca a cor do fundo */
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Muda o tipo de display */
+    flex-direction: column; /* Muda o sentido do "flex" */
 }
 
 .modal {
-    position: fixed;
-    display: none;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 2;
+    position: fixed; /* Muda o tipo de posição */
+    display: none; /* Muda o tipo de display */
+    top: 0; /* Espaço entre o topo e o elemento */
+    left: 0; /* Espaço entre a esquerda e o elemento */
+    height: 100vh; /* Altura do elemento */
+    width: 100vw; /* Comprimento do elemento */
+    background-color: rgba(0, 0, 0, 0.6); /* Troca a cor do fundo */
+    z-index: 2; /* Coloca o elemento em uma posição */
 }
 
 .formFofoca {
-    display: none;
-    color: #000;
-    position: fixed;
-    left: 50%;
-    top: 40%;
+    display: none; /* Muda o tipo de display */
+    color: #000; /* Cor da fonte */
+    position: fixed; /* Muda o tipo de posição */
+    left: 50%; /* Espaço entre a esquerda e o elemento */
+    top: 40%; /* Espaço entre o topo e o elemento */
     transform: translate(-50%, -50%);
-    background-color: #f3f3f3;
-    border: 2px solid #131921;
-    border-radius: 0.5rem;
-    width: 500px;
-    height: auto;
-    padding: 20px;
-    margin: 3rem auto 3rem auto;
-    z-index: 3;
+    background-color: #f3f3f3; /* Troca a cor do fundo */
+    border: 2px solid #131921; /* Coloca o elemento em uma posição */
+    border-radius: 0.5rem; /* Muda o raio da borda */
+    width: 500px; /* Comprimento do elemento */
+    height: auto; /* Altura do elemento */
+    padding: 20px; /* "Infla" o elemento */
+    margin: 3rem auto 3rem auto; /* Muda a margem */
+    z-index: 3; /* Coloca o elemento em uma posição */
 }
 
 #btnFechar {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 5px 10px;
+    position: absolute; /* Muda o tipo de posição */
+    right: 1rem; /* Espaço entre a direita e o elemento */
+    top: 1rem; /* Espaço entre o topo e o elemento */
+    background-color: transparent; /* Troca a cor do fundo */
+    cursor: pointer; /* Muda o tipo de cursor */
+    padding: 5px 10px; /* "Infla" o elemento */
 }
 
 #btnFechar .fa-times {
-    font-size: 20px;
-    color: #000;
+    font-size: 20px; /* Tamanho da fonte */
+    color: #000; /* Cor da fonte */
 }
 
 .formFofoca h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 1rem;
+    font-size: 2rem; /* Tamanho da fonte */
+    text-align: center; /* Alinha elemento */
+    margin-bottom: 1rem; /* Muda margem abaixo */
 }
 
 .formFofoca p {
-    font-size: 20px;
-    color: #f00;
-    margin-bottom: 1rem;
+    font-size: 20px; /* Tamanho da fonte */
+    color: #f00; /* Cor da fonte */
+    margin-bottom: 1rem; /* Muda margem abaixo */
 }
 
 .formFofoca div {
-    margin-bottom: 1rem;
-    display: flex;
-    flex-wrap: wrap;
+    margin-bottom: 1rem; /* Muda margem abaixo */
+    display: flex; /* Muda o tipo de display */
+    flex-wrap: wrap; /* Passa pra linha debaixo se passar do limite do elemento */
 }
 
 .formFofoca label {
-    margin-bottom: 0.2rem;
-    font-size: 20px;
-    cursor: pointer;
+    margin-bottom: 0.2rem; /* Muda margem abaixo */
+    font-size: 20px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o tipo de cursor */
 }
 
 .formFofoca input,
 .formFofoca textarea {
-    width: 100%;
-    border: 2px solid #000;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    transition: border .3s;
-    resize: none;
+    width: 100%; /* Comprimento do elemento */
+    border: 2px solid #000; /* Coloca o elemento em uma posição */
+    border-radius: 0.5rem; /* Muda o raio da borda */
+    padding: 0.5rem; /* "Infla" o elemento */
+    transition: border .3s; /* Transição num determinadao tempo com os itens escolhidos */
+    resize: none; /* Não deixa usuário mudar o tamanho */
 }
 
 .counter {
-    margin-left: auto;
-    margin-right: 0.3rem;
-    font-size: 1.2rem;
+    margin-left: auto; /* Espaço entre a esquerda e o elemento */
+    margin-right: 0.3rem; /* Espaço entre a direita e o elemento */
+    font-size: 1.2rem; /* Tamanho da fonte */
 }
 
 .formFofoca input:hover,
 .formFofoca input:focus,
 .formFofoca textarea:hover,
 .formFofoca textarea:focus {
-    border: 2px solid #ffa500;
+    border: 2px solid #ffa500; /* Coloca o elemento em uma posição */
 }
 
 #addCard {
     font-weight: 600;
-    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-    background-color: #ffa500;
-    outline: none;
-    margin-left: 50%;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem; /* "Infla" o elemento */
+    background-color: #ffa500; /* Troca a cor do fundo */
+    outline: none;  /* Muda a linha de fora */ 
+    margin-left: 50%; /* Espaço entre a esquerda e o elemento */
     transform: translateX(-50%);
-    cursor: pointer;
-    border: 2px solid transparent;
-    border-radius: 0.5rem;
-    transition: border .3s;
+    cursor: pointer; /* Muda o tipo de cursor */
+    border: 2px solid transparent; /* Coloca o elemento em uma posição */
+    border-radius: 0.5rem; /* Muda o raio da borda */
+    transition: border .3s; /* Transição num determinadao tempo com os itens escolhidos */
 }
 
 #addCard:hover {
-    border: 2px solid #131921;
+    border: 2px solid #131921; /* Coloca o elemento em uma posição */
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(4, 300px);
-    justify-content: center;
-    gap: 1rem;
-    padding: 2rem;
+    display: grid; /* Muda o tipo de display */
+    grid-template-columns: repeat(4, 300px); /* Padroniza quantidade de colunas e seu tamanho */
+    justify-content: center; /* Espaçamento entre os conteúdos */
+    gap: 1rem; /* Espaço entre os conteúdos */
+    padding: 2rem; /* "Infla" o elemento */
 }
 
 .divfofoca {
-    position: relative;
-    background-color: #232f3e;
-    border-radius: 1rem;
-    color: #fff;
+    position: relative; /* Muda o tipo de posição */
+    background-color: #232f3e; /* Troca a cor do fundo */
+    border-radius: 1rem; /* Muda o raio da borda */
+    color: #fff; /* Cor da fonte */
 }
 
 .divfofoca img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 1rem 1rem 0 0;
+    width: 100%; /* Comprimento do elemento */
+    height: auto; /* Altura do elemento */
+    object-fit: cover; /* Como a imagem fica dentro do elemento pai */
+    border-radius: 1rem 1rem 0 0; /* Muda o raio da borda */
 }
 
 .divfofoca h2 {
     text-transform: uppercase;
-    font-size: 1rem;
-    padding: 0.5rem 0;
-    margin:  0 1rem;
-    border-bottom: 2px solid #ffa500;
+    font-size: 1rem; /* Tamanho da fonte */
+    padding: 0.5rem 0; /* "Infla" o elemento */
+    margin:  0 1rem; /* Muda a margem */
+    border-bottom: 2px solid #ffa500; /* Muda margem abaixo */
 }
 
 .divfofoca p {
-    font-size: .9rem;
-    margin: 1rem;
+    font-size: .9rem; /* Tamanho da fonte */
+    margin: 1rem; /* Muda a margem */
 }
 
 .divfofoca button {
-    position: absolute;
-    background-color: #ffa500;
-    font-size: 1rem;
-    padding: 0.1rem 0.3rem;
-    border-radius: 1rem;
-    left: 50%;
-    bottom: -0.5rem;
-    transform: translateX(-50%);
-    cursor: pointer;
-}
-
-.divfofoca button i {
-    transform: rotate(90deg);
-    transition: transform;
-}
-
-.divfofoca button i:hover {
-    transform: rotate(90deg);
+    position: absolute; /* Muda o tipo de posição */
+    background-color: #ffa500; /* Troca a cor do fundo */
+    font-size: 1rem; /* Tamanho da fonte */
+    padding: 0.1rem 0.3rem; /* "Infla" o elemento */
+    border-radius: 1rem; /* Muda o raio da borda */
+    left: 50%; /* Espaço entre a esquerda e o elemento */
+    bottom: -0.5rem; /* Espaço embaixo e o elemento */
+    transform: translateX(-50%); /* "Conserta" mudança de posição */
+    cursor: pointer; /* Muda o tipo de cursor */
 }

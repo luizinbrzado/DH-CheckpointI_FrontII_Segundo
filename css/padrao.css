@@ -1,79 +1,79 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    outline: none;
-    border: none;
+    margin: 0; /* Muda a margem */
+    padding: 0; /* "Infla" o elemento */
+    box-sizing: border-box; /* Muda a propriedade do tamanho da caixa e não inclui a margem */
+    list-style: none; /* Muda estilo de lista */
+    outline: none; /* Muda a linha de fora */
+    border: none; /* Muda a borda */
 }
 
 /* HEADER */
 
 header {
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    background-color: #131921;
-    padding: 1rem;
+    position: fixed; /* Muda o tipo de posição */
+    width: 100%; /* Muda o comprimento */
+    z-index: 1; /* Coloca o elemento em uma posição */
+    background-color: #131921; /* Troca a cor do fundo */
+    padding: 1rem; /* "Infla" o elemento */
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Muda o tipo de display */
+    justify-content: space-between; /* Muda o espaçamento do conteúdo */
+    align-items: center; /* Alinha itens */
 }
 
 nav img {
-    width: 60px;
-    height: auto;
-    border-radius: 0.5rem;
+    width: 60px; /* Muda o comprimento */
+    height: auto; /* Muda a altura */
+    border-radius: 0.5rem; /* Muda o raio da borda */
 }
 
 nav div {
-    display: flex;
+    display: flex; /* Muda o tipo de display */
 }
 
 nav button {
-    font-weight: 600;
-    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-    background-color: #ffa500;
-    outline: none;
-    cursor: pointer;
-    border: 2px solid transparent;
-    border-radius: 0.5rem;
-    transition: border .3s;
+    font-weight: 600; /* Muda o peso da fonte */
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem; /* "Infla" o elemento */
+    background-color: #ffa500; /* Troca a cor do fundo */
+    outline: none;  /* Muda a linha de fora */
+    cursor: pointer; /* Muda o cursor ao passar pelo elemento */
+    border: 2px solid transparent; /* Muda a borda */
+    border-radius: 0.5rem; /* Muda o raio da borda */
+    transition: border .3s; /* Faz transição num tempo determinado nos itens escolhidos */
 }
 
 nav button:hover {
-    border: 2px solid #fff;
+    border: 2px solid #fff; /* Muda a borda */
 }
 
 nav ul {
-    display: flex;
-    align-items: center;
+    display: flex; /* Muda o tipo de display */
+    align-items: center; /* Alinha itens */
 }
 
 nav li {
-    margin-left: 1rem;
+    margin-left: 1rem; /* Muda margem na esquerda */
 }
 
 nav li a {
     text-decoration: none;
-    border: 1px solid transparent;
-    border-radius: 0.5rem;
-    transition: border;
+    border: 1px solid transparent; /* Muda a borda */
+    border-radius: 0.5rem; /* Muda o raio da borda */
+    transition: border; /* Faz transição num tempo determinado nos itens escolhidos */
 }
 
 nav li a:focus,
 nav li a:hover {
-    border: 1px solid #fff;
+    border: 1px solid #fff; /* Muda a borda */
 }
 
 nav li a {
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #fff;
-    padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+    font-size: 1.2rem; /* Muda tamanho da fonte */
+    font-weight: 400; /* Muda peso da fonte */
+    color: #fff; /* Muda cor da fonte */
+    padding: 0.2rem 0.8rem 0.2rem 0.8rem; /* "Infla" elemento */
 }
 
 /* /HEADER */
@@ -83,24 +83,24 @@ nav li a {
 /* MAIN */
 
 main {
-    padding: 90px 0 18px 0;
-    min-height: 90vh;
+    padding: 90px 0 18px 0; /* "Infla" elemento */
+    min-height: 90vh; /* Deixa o mínimo de tamanho */
 }
 
 /* /MAIN */
 
 /* FIXED BUTTON */
 section {
-    position: absolute;
-    width: 100%;
-    height: 1rem;
+    position: absolute; /* Muda o tipo de posição */
+    width: 100%; /* Muda o comprimento */
+    height: 1rem; /* Muda a altura */
 }
 
 #fixedButton img{
-    position: absolute;
-    right: 3rem;
-    bottom: 1rem;
-    width: 4.5rem;
+    position: absolute; /* Muda o tipo de posição */
+    right: 3rem; /* Distância da direita do elemento */
+    bottom: 1rem; /* Distância debaixo do elemento */
+    width: 4.5rem; /* Comprimento do elemento */
 }
 
 /* /FIXED BUTTON */
@@ -108,16 +108,16 @@ section {
 /* FOOTER */
 
 footer {
-    position: relative;
-    width: 100%;
-    background-color: #131921;
-    padding: 2.4rem;
-    text-align: center;
-    bottom: 0;
+    position: relative; /* Muda o tipo de posição */
+    width: 100%; /* Comprimento do elemento */
+    background-color: #131921; /* Troca a cor do fundo */
+    padding: 2.4rem; /* "Infla" elemento */
+    text-align: center; /* Alinha itens */
+    bottom: 0; /* Distância debaixo do elemento */
 }
 
 footer p {
-    color: #fff;
+    color: #fff; /* Muda cor da fonte */
 }
 
 /* /FOOTER */

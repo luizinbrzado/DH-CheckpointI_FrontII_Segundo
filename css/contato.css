@@ -1,72 +1,72 @@
 .contato {
-    color: #000;
-    position: fixed;
-    left: 50%;
-    top: 45%;
-    transform: translate(-45%, -50%);
-    background-color: #f3f3f3;
-    border: 2px solid #131921;
-    border-radius: 0.5rem;
-    width: 500px;
-    height: auto;
-    padding: 20px;
-    margin: 3rem auto 3rem auto;
+    color: #000; /* Dá cor preta no texto */
+    position: fixed; /* Posição do elemento fixado na tela */
+    left: 50%; /* Fica 50% da esquerda pra direita */
+    top: 45%; /* Fica 45% do topo para baixo */
+    transform: translate(-45%, -50%); /* "Conserta" top e left, respectivamente */
+    background-color: #f3f3f3; /* Troca a cor do fundo */
+    border: 2px solid #131921; /* Muda a quantidade de pixels, tipo e cor da borda */
+    border-radius: 0.5rem; /* Muda o raio da borda */
+    width: 500px; /* Muda o comprimento */
+    height: auto; /* Deixa a altura automática */
+    padding: 20px; /* "Infla" o elemento */
+    margin: 3rem auto 3rem auto; /* Muda a margem */
 }
 
 .contato h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 1rem;
+    font-size: 2rem; /* Tamanho da fonte */
+    text-align: center; /* Alinha o texto no centro */
+    margin-bottom: 1rem; /* Coloca margem abaixo */
 }
 
 .contato p {
-    font-size: 20px;
-    color: #f00;
-    margin-bottom: 1rem;
+    font-size: 20px; /* Tamanho da fonte */
+    color: #f00; /* Dá cor vermelha no texto */
+    margin-bottom: 1rem; /* Coloca margem abaixo */
 }
 
 .contato div {
-    margin-bottom: 1rem;
-    display: flex;
-    flex-wrap: wrap;
+    margin-bottom: 1rem; /* Coloca margem abaixo */
+    display: flex; /* Deixa o elemento "flexível" */
+    flex-wrap: wrap; /* Se passar dá borda, quebra e passa pra próxima linha */
 }
 
 .contato label {
-    margin-bottom: 0.2rem;
-    font-size: 20px;
-    cursor: pointer;
+    margin-bottom: 0.2rem; /* Coloca margem abaixo */
+    font-size: 20px; /* Tamanho da fonte */
+    cursor: pointer; /* Tipo de cursor ao passar o cursor */
 }
 
 .contato input,
 .contato textarea {
-    width: 100%;
-    border: 2px solid #000;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    transition: border .3s;
-    resize: none;
+    width: 100%; /* Muda o comprimento */
+    border: 2px solid #000; /* Quantitdade de pixels, tipo e cor da borda */
+    border-radius: 0.5rem; /* Muda o raio da borda */
+    padding: 0.5rem; /* "Infla" o elemento */
+    transition: border .3s; /* Dá transição num tempo determinado só em "border" */
+    resize: none; /* Não deixa o usuário mudar o tamanho do "textarea" */
 }
 
 .contato input:hover,
 .contato input:focus,
 .contato textarea:hover,
 .contato textarea:focus {
-    border: 2px solid #ffa500;
+    border: 2px solid #ffa500; /* Quantitdade de pixels, tipo e cor da borda */
 }
 
 .btn-contato {
-    font-weight: 600;
-    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-    background-color: #ffa500;
-    outline: none;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    cursor: pointer;
-    border: 2px solid transparent;
-    border-radius: 0.5rem;
-    transition: border .3s;
+    font-weight: 600; /* Peso da fonte */
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem; /* "Infla" o elemento */
+    background-color: #ffa500; /* Muda a cor do fundo */
+    outline: none; /* Não mostra linhas de fora */
+    margin-left: 50%; /* Muda margem à esquerda */
+    transform: translateX(-50%); /* "Conserta" o eixo X */
+    cursor: pointer; /* Tipo de cursor ao passar o cursor */
+    border: 2px solid transparent; /* Muda quantidade de pixels, tipo e cor da borda */
+    border-radius: 0.5rem; /* Muda o raio da borda */
+    transition: border .3s; /* Dá transição num tempo determinado só em "border" */
 }
 
 .btn-contato:hover {
-    border: 2px solid #131921;
+    border: 2px solid #131921; /* Muda a quantidade de pixels, tipo e cor da borda */
 }

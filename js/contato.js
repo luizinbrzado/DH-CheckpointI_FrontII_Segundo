@@ -1,5 +1,8 @@
+// Coloca a classe "corpo" na variável "corpo"
 const corpo = document.querySelector('.corpo');
 
+// Função que tem função de colocar no elemento armazenado na variável "corpo"
+// um HTML predefinido que é um formuláario
 function criarFormContato() {
     corpo.innerHTML = `
     <div class="contato">
